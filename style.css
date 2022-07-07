@@ -75,6 +75,7 @@ p {
 .column:nth-child(1) {
   background: url(images/icon-sedans.svg) 4.8rem 4.8rem no-repeat,
     hsl(31, 77%, 52%);
+  border-radius: 1.5rem 1.5rem 0 0;
 }
 
 .column:nth-child(1) .button {
@@ -105,6 +106,7 @@ p {
 .column:nth-child(3) {
   background: url(images/icon-luxury.svg) 4.8rem 4.8rem no-repeat,
     hsl(179, 100%, 13%);
+  border-radius: 0 0 1.5rem 1.5rem;
 }
 
 .column:nth-child(3) .button {
@@ -125,6 +127,14 @@ p {
     width: 30.7rem;
     height: 50rem;
     display: inline-block;
+  }
+
+  .column:nth-child(1) {
+    border-radius: 1.5rem 0 0 1.5rem;
+  }
+
+  .column:nth-child(3) {
+    border-radius: 0 1.5rem 1.5rem 0;
   }
 
   .column:nth-child(2),
