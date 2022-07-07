@@ -60,6 +60,18 @@ p {
   padding: 12.9rem 4.8rem 4.8rem;
 }
 
+.button {
+  background: hsl(0, 0%, 95%);
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 3rem;
+  width: 12rem;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
 .column:nth-child(1) {
   background: url(images/icon-sedans.svg) 4.8rem 4.8rem no-repeat,
     hsl(31, 77%, 52%);
@@ -67,6 +79,12 @@ p {
 
 .column:nth-child(1) .button {
   color: hsl(31, 77%, 52%);
+}
+
+.column:nth-child(1) .button:hover {
+  color: hsl(0, 0%, 95%);
+  box-shadow: 0 0 0 2px hsl(0, 0%, 95%);
+  background-color: hsl(31, 77%, 52%);
 }
 
 .column:nth-child(2) {
@@ -78,6 +96,12 @@ p {
   color: hsl(184, 100%, 22%);
 }
 
+.column:nth-child(2) .button:hover {
+  color: hsl(0, 0%, 95%);
+  box-shadow: 0 0 0 2px hsl(0, 0%, 95%);
+  background: hsl(184, 100%, 22%);
+}
+
 .column:nth-child(3) {
   background: url(images/icon-luxury.svg) 4.8rem 4.8rem no-repeat,
     hsl(179, 100%, 13%);
@@ -87,16 +111,10 @@ p {
   color: hsl(179, 100%, 13%);
 }
 
-.button {
-  background: hsl(0, 0%, 95%);
-  text-align: center;
-  padding: 1.5rem;
-  border-radius: 3rem;
-  width: 12rem;
-}
-
-.button:hover {
-  cursor: pointer;
+.column:nth-child(3) .button:hover {
+  color: hsl(0, 0%, 95%);
+  box-shadow: 0 0 0 2px hsl(0, 0%, 95%);
+  background: hsl(179, 100%, 13%);
 }
 
 @media screen and (min-width: 910px) {
