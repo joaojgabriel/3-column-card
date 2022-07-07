@@ -26,7 +26,6 @@ html {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
   font-size: 1.5rem;
 }
 
@@ -36,17 +35,82 @@ main {
   align-items: center;
   min-height: 100vh;
   background: hsl(0, 0%, 95%);
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+p {
+  line-height: 1.7;
+  margin: 4rem 0 3.2rem;
 }
 
 .card {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: 1fr 1fr 1fr;
-  /* grid-gap: 1rem; */
   width: 87.2%;
-  background: orange;
+  margin: 9.2rem auto;
 }
 
 .column {
   padding: 12.9rem 4.8rem 4.8rem;
+}
+
+.column:nth-child(1) {
+  background: url(images/icon-sedans.svg) 4.8rem 4.8rem no-repeat,
+    hsl(31, 77%, 52%);
+}
+
+.column:nth-child(1) .button {
+  color: hsl(31, 77%, 52%);
+}
+
+.column:nth-child(2) {
+  background: url(images/icon-suvs.svg) 4.8rem 4.8rem no-repeat,
+    hsl(184, 100%, 22%);
+}
+
+.column:nth-child(2) .button {
+  color: hsl(184, 100%, 22%);
+}
+
+.column:nth-child(3) {
+  background: url(images/icon-luxury.svg) 4.8rem 4.8rem no-repeat,
+    hsl(179, 100%, 13%);
+}
+
+.column:nth-child(3) .button {
+  color: hsl(179, 100%, 13%);
+}
+
+.button {
+  background: hsl(0, 0%, 95%);
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 3rem;
+  width: 12rem;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 910px) {
+  .card {
+    width: auto;
+  }
+  .column {
+    width: 30.7rem;
+    height: 50rem;
+    display: inline-block;
+  }
+
+  .column:nth-child(2),
+  .column:nth-child(3) {
+    margin-left: -1rem;
+  }
 }
